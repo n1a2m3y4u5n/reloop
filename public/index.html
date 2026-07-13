@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Reloop — 도시 순환형 푸드 플랫폼</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand">
+      <div class="logo">♻️</div>
+      <div>
+        <h1>Reloop</h1>
+        <small>도시 순환형 푸드 플랫폼</small>
+      </div>
+      <button class="hd-bell" id="hd-bell" aria-label="알림">🔔<span class="bell-badge" id="bell-badge" style="display:none">0</span></button>
+      <div class="hd-right" id="hd-profile">
+        <div class="hd-points"><span id="hd-pts">0</span> <span>P</span></div>
+        <div class="hd-plabel">내 순환 포인트</div>
+      </div>
+    </div>
+  </header>
+  <main id="view"><div class="loading">불러오는 중…</div></main>
+  <nav class="tabbar">
+    <button class="tab" data-tab="home"><span class="ti">🏠</span>홈</button>
+    <button class="tab" data-tab="dispose"><span class="ti">♻️</span>배출</button>
+    <button class="tab" data-tab="track"><span class="ti">🔄</span>처리현황<span class="dotN" id="track-badge" style="display:none">0</span></button>
+    <button class="tab" data-tab="store"><span class="ti">🛒</span>스토어</button>
+    <button class="tab" data-tab="data"><span class="ti">📊</span>데이터</button>
+    <button class="tab" data-tab="me"><span class="ti">👤</span>내정보</button>
+  </nav>
+</div>
+<div id="toast"></div>
+<div class="modal-bg" id="modalbg"><div class="modal" id="modal"></div></div>
+<script src="visuals.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

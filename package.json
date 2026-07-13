@@ -1,0 +1,13 @@
+{
+  "name": "reloop-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reloop — 도시 순환형 푸드 플랫폼 (풀스택 프로토타입)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}
